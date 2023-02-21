@@ -5,10 +5,10 @@ import cartWidget from './components/cartWidget';
 class Principal extends React.Component{
   render() {
     return(
-      <div>
+      <>
           <navBar />
           <cartWidget />
-      </div>      
+      </>      
     )
   };
 
