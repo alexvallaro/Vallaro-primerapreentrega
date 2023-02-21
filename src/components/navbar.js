@@ -5,9 +5,26 @@ import CartWidget from "./cartWidget";
 
 class NavBar extends React.Component{
     render (){
-        return <h1>a ver sisfsasa sale el NavBar</h1>;
+        return <div className="container">
+            <nav className="nav">
+                <div className="nav__brand">
+                    <a className="nav__link" href="#">Brodi Ropa de Fiesta</a>
+                </div>
+                <ul className="nav__list">
+                <li> 
+                    <a className="nav__link" href="#">Remeras Estampadas</a>
+                </li>
+                <li> 
+                    <a className="nav__link" href="#">Bermudas</a>
+                </li> 
+                <li> 
+                    <a className="nav__link" href="#">Carrito</a>
+                    <CartWidget />
+                </li>
+                </ul>
+            </nav>
+        </div>;
     }
-
 }
 //exporto el componente
 export default NavBar;
