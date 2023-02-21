@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Principal from './App.js';
 import reportWebVitals from './reportWebVitals';
+// importo los nuevos componentes
+import navBar from './components/navbar';
+import cartWidget from './components/cartWidget';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Principal />
   </React.StrictMode>
 );
 
